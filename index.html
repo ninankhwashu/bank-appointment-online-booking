@@ -4,101 +4,97 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" />
-    <title>Bank Apppointment Booking</title>
+    <title>Bank Appointment Booking</title>
   </head>
   <body>
-    <header>
-      <h1>FNB Appointment Booking</h1>
+    <header class="hero">
+      <div class="hero-content">
+        <h1>How can we help you?</h1>
+        <p>
+          Book your appointments easily and manage all your banking needs in one
+          place.
+        </p>
+        <a href="#booking" class="cta-button">Get Started</a>
+      </div>
     </header>
 
-    <div class="container">
-      <div class="card">
-        <h2>Welcome to FNB Appointment Booking</h2>
-        <p>
-          Book your appointments with ease. Select your preferred branch,
-          service, and time slot to ensure a smooth banking experience.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>Book an Appointment</h2>
-        <form id="appointmentForm">
-          <label for="branch">Select Branch:</label>
-          <select id="branch" required>
-            <option value="">-- Choose a branch --</option>
-            <option value="tzaneen">Tzaneen</option>
-            <option value="polokwane">Polokwane</option>
-
-            <option value="sandton">Sandton</option>
-            <option value="pretoria">Pretoria</option>
-            <option value="rosebank">Rosebank</option>
-            <option value="cape-town">Cape Town</option>
-            <option value="stellenbosch">Stellenbosch</option>
-            <option value="kimberley">Kimberley</option>
-            <option value="kuruman">Kuruman</option>
-            <option value="mbombela">Mbombela</option>
-            <option value="secunda">Secunda</option>
-            <option value="durban">Durban</option>
-            <option value="newcastle">Newcastle</option>
-            <option value="bloemfontein">Bloemfontein</option>
-            <option value="welkom">Welkom</option>
-            <option value="east-london">East London</option>
-            <option value="gqeberha">Gqeberha</option>
-            <option value="mahikeng">Mahikeng</option>
-            <option value="rusternburg">Rusternburg</option>
-          </select>
-
-          <label for="service">Select Service:</label>
-          <select id="service" required>
-            <option value="">-- Choose a service --</option>
-            <option value="general-enquiries">General Enquiries</option>
-            <option value="account-opening">Open An Account</option>
-            <option value="loan">Loan Consultation</option>
-            <option value="card-issues">Card Issues</option>
-            <option value="business">Business Consultation</option>
-            <option value="investment">Investment Banking</option>
-            <option value="family-services">Family Financial Services</option>
-          </select>
-
-          <label for="date">Select Date:</label>
-          <input type="date" id="date" required />
-
-          <label for="time">Select Time Slot:</label>
-          <select id="time" required>
-            <option value="">-- Choose a time --</option>
-            <option value="9am">9:00 AM</option>
-            <option value="10am">10:00 AM</option>
-            <option value="11am">11:00 AM</option>
-            <option value="12pm">12:00 PM</option>
-            <option value="1pm">1:00 PM</option>
-            <option value="2pm">2:00 PM</option>
-            <option value="3pm">3:00 PM</option>
-            <option value="4pm">4:00 PM</option>
-          </select>
-
-          <button type="submit">Book Appointment</button>
-        </form>
-      </div>
-
-      <div class="card">
-        <h2>Available Dates</h2>
-        <div class="calendar">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
-          <div>5</div>
-          <div>6</div>
-          <div>7</div>
+    <main class="container">
+      <section class="intro">
+        <div class="card highlight">
+          <h2>Welcome to FNB Appointment Booking</h2>
+          <p>
+            Book your appointments with ease. Select your preferred branch,
+            service, and time slot to ensure a smooth banking experience.
+          </p>
         </div>
-      </div>
-    </div>
+      </section>
+
+      <section id="booking" class="booking-section">
+        <div class="card booking-form">
+          <h2>Book an Appointment</h2>
+          <form id="appointmentForm">
+            <label for="branch">Select Branch:</label>
+            <select id="branch" required>
+              <option value="">-- Choose a branch --</option>
+              <option value="tzaneen">Tzaneen</option>
+              <option value="polokwane">Polokwane</option>
+              <option value="sandton">Sandton</option>
+              <option value="pretoria">Pretoria</option>
+              <option value="rosebank">Rosebank</option>
+              <option value="cape-town">Cape Town</option>
+              <option value="stellenbosch">Stellenbosch</option>
+              <option value="kimberley">Kimberley</option>
+              <option value="kuruman">Kuruman</option>
+              <option value="mbombela">Mbombela</option>
+              <option value="secunda">Secunda</option>
+              <option value="durban">Durban</option>
+              <option value="newcastle">Newcastle</option>
+              <option value="bloemfontein">Bloemfontein</option>
+              <option value="welkom">Welkom</option>
+              <option value="east-london">East London</option>
+              <option value="gqeberha">Gqeberha</option>
+              <option value="mahikeng">Mahikeng</option>
+              <option value="rusternburg">Rusternburg</option>
+            </select>
+
+            <label for="service">Select Service:</label>
+            <select id="service" required>
+              <option value="">-- Choose a service --</option>
+              <option value="general-enquiries">General Enquiries</option>
+              <option value="account-opening">Open An Account</option>
+              <option value="loan">Loan Consultation</option>
+              <option value="card-issues">Card Issues</option>
+              <option value="business">Business Consultation</option>
+              <option value="investment">Investment Banking</option>
+              <option value="family-services">Family Financial Services</option>
+            </select>
+
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" required />
+
+            <label for="time">Select Time Slot:</label>
+            <select id="time" required>
+              <option value="">-- Choose a time --</option>
+              <option value="9am">9:00 AM</option>
+              <option value="10am">10:00 AM</option>
+              <option value="11am">11:00 AM</option>
+              <option value="12pm">12:00 PM</option>
+              <option value="1pm">1:00 PM</option>
+              <option value="2pm">2:00 PM</option>
+              <option value="3pm">3:00 PM</option>
+              <option value="4pm">4:00 PM</option>
+            </select>
+
+            <button type="submit">Book Appointment</button>
+          </form>
+        </div>
+      </section>
+    </main>
 
     <footer>
       <p>&copy; 2025 FNB. All Rights Reserved.</p>
       <p>
-        This project was coded by <strong><em>Nina Nkhwashu ❤</em></strong> and
-        is open sourced on
+        Designed by <strong>Nina Nkhwashu</strong>. Open-sourced on
         <a href="https://github.com/ninankhwashu/world-clock" target="_blank"
           >GitHub</a
         >
