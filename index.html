@@ -9,7 +9,7 @@
   <body>
     <header class="hero">
       <div class="hero-content">
-        <h1>How can we help you?</h1>
+        <h1>How Can We Help You?</h1>
         <p>
           Book your appointments easily and manage all your banking needs in one
           place.
@@ -19,80 +19,108 @@
     </header>
 
     <main class="container">
-      <section class="intro">
-        <div class="card highlight">
-          <h2>Welcome to FNB Appointment Booking</h2>
-          <p>
-            Book your appointments with ease. Select your preferred branch,
-            service, and time slot to ensure a smooth banking experience.
-          </p>
-        </div>
-      </section>
+      <div class="booking-layout">
+        <!-- Booking Section -->
+        <section id="booking" class="booking-section">
+          <div class="card booking-form">
+            <h2>Book an Appointment</h2>
+            <form id="appointmentForm">
+              <label for="fullName">Full Name:</label>
+              <input
+                type="text"
+                id="fullName"
+                placeholder="Enter your full name"
+                required
+              />
 
-      <section id="booking" class="booking-section">
-        <div class="card booking-form">
-          <h2>Book an Appointment</h2>
-          <form id="appointmentForm">
-            <label for="branch">Select Branch:</label>
-            <select id="branch" required>
-              <option value="">-- Choose a branch --</option>
-              <option value="Tzaneen">Tzaneen</option>
-              <option value="Polokwane">Polokwane</option>
-              <option value="Sandton">Sandton</option>
-              <option value="Pretoria">Pretoria</option>
-              <option value="Rosebank">Rosebank</option>
-              <option value="Cape Town">Cape Town</option>
-              <option value="Stellenbosch">Stellenbosch</option>
-              <option value="Kimberley">Kimberley</option>
-              <option value="Kuruman">Kuruman</option>
-              <option value="Mbombela">Mbombela</option>
-              <option value="Secunda">Secunda</option>
-              <option value="Durban">Durban</option>
-              <option value="Newcastle">Newcastle</option>
-              <option value="Bloemfontein">Bloemfontein</option>
-              <option value="Welkom">Welkom</option>
-              <option value="East London">East London</option>
-              <option value="Gqeberha">Gqeberha</option>
-              <option value="Mahikeng">Mahikeng</option>
-              <option value="Rusternburg">Rusternburg</option>
-            </select>
+              <label for="idNumber">ID Number:</label>
+              <input
+                type="text"
+                id="idNumber"
+                placeholder="Enter your ID number"
+                required
+              />
 
-            <label for="service">Select Service:</label>
-            <select id="service" required>
-              <option value="">-- Choose a service --</option>
-              <option value="General Enquiries">General Enquiries</option>
-              <option value="Open An Account">Open An Account</option>
-              <option value="Loan Consultation">Loan Consultation</option>
-              <option value="Card Issues">Card Issues</option>
-              <option value="Business Consultation">
-                Business Consultation
-              </option>
-              <option value="Investment Banking">Investment Banking</option>
-              <option value="Family Financial Services">
-                Family Financial Services
-              </option>
-            </select>
+              <label for="branch">Select Branch:</label>
+              <select id="branch" required>
+                <option value="">-- Choose a branch --</option>
+                <option value="Tzaneen">Tzaneen</option>
+                <option value="Polokwane">Polokwane</option>
+                <option value="Sandton">Sandton</option>
+                <option value="Pretoria">Pretoria</option>
+                <option value="Rosebank">Rosebank</option>
+                <option value="Cape Town">Cape Town</option>
+                <option value="Stellenbosch">Stellenbosch</option>
+                <option value="Kimberley">Kimberley</option>
+                <option value="Kuruman">Kuruman</option>
+                <option value="Mbombela">Mbombela</option>
+                <option value="Secunda">Secunda</option>
+                <option value="Durban">Durban</option>
+                <option value="Newcastle">Newcastle</option>
+                <option value="Bloemfontein">Bloemfontein</option>
+                <option value="Welkom">Welkom</option>
+                <option value="East London">East London</option>
+                <option value="Gqeberha">Gqeberha</option>
+                <option value="Mahikeng">Mahikeng</option>
+                <option value="Rusternburg">Rusternburg</option>
+              </select>
 
-            <label for="date">Select Date:</label>
-            <input type="date" id="date" required />
+              <label for="service">Select Service:</label>
+              <select id="service" required>
+                <option value="">-- Choose a service --</option>
 
-            <label for="time">Select Time Slot:</label>
-            <select id="time" required>
-              <option value="">-- Choose a time --</option>
-              <option value="09:00">09:00</option>
-              <option value="10:00">10:00</option>
-              <option value="11:00">11:00</option>
-              <option value="12:00">12:00</option>
-              <option value="13:00">13:00</option>
-              <option value="14:00">14:00</option>
-              <option value="15:00">15:00</option>
-              <option value="16:00">16:00</option>
-            </select>
+                <option value="General Enquiries">General Enquiries</option>
+                <option value="Open An Account">Open An Account</option>
+                <option value="Loan Consultation">Loan Consultation</option>
+                <option value="Card Issues">Card Issues</option>
+                <option value="Business Consultation">
+                  Business Consultation
+                </option>
+                <option value="Investment Banking">Investment Banking</option>
+                <option value="Family Financial Services">
+                  Family Financial Services
+                </option>
+              </select>
 
-            <button type="submit">Book Appointment</button>
-          </form>
-        </div>
-      </section>
+              <label for="date">Select Date:</label>
+              <input type="date" id="date" required />
+
+              <label for="time">Select Time Slot:</label>
+              <select id="time" required>
+                <option value="">-- Choose a time --</option>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+              </select>
+
+              <button type="submit">Book Appointment</button>
+            </form>
+          </div>
+        </section>
+
+        <section class="appointments-section">
+          <div class="card appointments-card">
+            <h2>Your Appointments</h2>
+            <div id="appointmentDetails" class="appointment-details">
+              <p>No appointments booked.</p>
+            </div>
+            <button onclick="exploreServices()">Explore Our Services</button>
+            <button onclick="logIntoAccount()">Log Into Your Account</button>
+            <button onclick="registerForBanking()">
+              Register For Online Banking
+            </button>
+          </div>
+          <div class="branding">
+            <img src="src/fnb-logo.png" alt="FNB Logo" />
+            <p>How Can We Help You?</p>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer>
