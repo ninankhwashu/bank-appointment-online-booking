@@ -27,7 +27,7 @@
     </div>
     <div id="mainContent" class="main-content hidden">
       <main class="container">
-        <div class="booking-layout">
+        <div class="content-layout">
           <section id="booking" class="booking-section">
             <div class="card booking-form">
               <h2>Book an Appointment</h2>
@@ -75,7 +75,6 @@
                 <label for="service">Select Service:</label>
                 <select id="service" required>
                   <option value="">-- Choose a service --</option>
-
                   <option value="General Enquiries">General Enquiries</option>
                   <option value="Open An Account">Open An Account</option>
                   <option value="Loan Consultation">Loan Consultation</option>
@@ -84,28 +83,37 @@
                     Business Consultation
                   </option>
                   <option value="Investment Banking">Investment Banking</option>
-                  <option value="Family Financial Services">
-                    Family Financial Services
-                  </option>
+                  <option value="Family Financial Services">Family Bank</option>
                 </select>
 
                 <label for="date">Select Date:</label>
+
                 <input type="date" id="date" required />
 
                 <label for="time">Select Time Slot:</label>
                 <select id="time" required>
                   <option value="">-- Choose a time --</option>
                   <option value="09:00">09:00</option>
+                  <option value="09:30">09:30</option>
                   <option value="10:00">10:00</option>
+                  <option value="10:30">10:30</option>
                   <option value="11:00">11:00</option>
+                  <option value="11:30">11:30</option>
                   <option value="12:00">12:00</option>
+                  <option value="12:30">12:30</option>
                   <option value="13:00">13:00</option>
+                  <option value="13:30">13:30</option>
                   <option value="14:00">14:00</option>
+                  <option value="14:30">14:30</option>
                   <option value="15:00">15:00</option>
+                  <option value="15:30">15:30</option>
                   <option value="16:00">16:00</option>
+                  <option value="16:30">16:30</option>
                 </select>
 
-                <button type="submit">Book Appointment</button>
+                <button class="submit-appointment" type="submit">
+                  Book Appointment
+                </button>
               </form>
             </div>
           </section>
@@ -123,35 +131,35 @@
                 >Explore Our Services</a
               >
               <a
-                href="https://www.fnb.co.za/login"
+                href="https://www.fnb.co.za"
                 target="_blank"
                 class="button-link"
                 >Log Into Your Account</a
               >
               <a
-                href="https://www.fnb.co.za/register"
+                href="https://www.online.fnb.co.za/banking/main.jsp?country=15&skin=0&nav=registration.navigator.RegistrationLanding&simple=true"
                 target="_blank"
                 class="button-link"
                 >Register For Online Banking</a
               >
             </div>
             <div class="branding">
-              <img src="src/fnb-logo.png" alt="FNB Logo" />
-              <p>How Can We Help You?</p>
+              <img src="src/fnb-logo.svg" alt="FNB Logo" />
+              <p><em>How Can We Help You?</em></p>
+
+              <p class="credit">
+                This project was coded by
+                <strong><em>Nina Nkhwashu ❤</em></strong> and is open sourced on
+                <a
+                  href="https://github.com/ninankhwashu/world-clock"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </p>
             </div>
           </section>
         </div>
       </main>
-      <footer>
-        <p>&copy; 2025 FNB. All Rights Reserved.</p>
-        <p>
-          This project was coded by
-          <strong><em>Nina Nkhwashu ❤</em></strong> and is open sourced on
-          <a href="https://github.com/ninankhwashu/world-clock" target="_blank"
-            >GitHub</a
-          >
-        </p>
-      </footer>
     </div>
 
     <script src="src/script.js"></script>
