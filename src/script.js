@@ -1,3 +1,27 @@
+document.addEventListener("DOMContentLoaded", function () {
+  let dateInput = document.getElementById("date");
+
+  let today = new Date();
+  let yyyy = today.getFullYear();
+  let mm = today.getMonth() + 1;
+  let dd = today.getDate();
+
+  let formattedDate = `${yyyy}-${mm < 10 ? "0" + mm : mm}-${
+    dd < 10 ? "0" + dd : dd
+  }`;
+  dateInput.min = formattedDate;
+
+  dateInput.addEventListener("change", function () {
+    let selectedDate = new Date(this.value);
+    let day = selectedDate.getDay();
+
+    if (day === 0 || day === 6) {
+      alert("Weekends are unavailable for booking. Please select a weekday.");
+      this.value = "";
+    }
+  });
+});
+
 document
   .getElementById("getStartedButton")
   .addEventListener("click", function () {
@@ -29,18 +53,28 @@ document
     let date = document.getElementById("date").value;
     let time = document.getElementById("time").value;
 
+    if (idNumber.length !== 13 || isNaN(idNumber)) {
+      alert("The ID number must be exactly 13 digits long.");
+      return;
+    }
+
     if (fullName && idNumber && branch && service && date && time) {
       let randomEmployee =
         employees[Math.floor(Math.random() * employees.length)];
       let details = `
-      <p>Client: ${fullName}</p>
-      <p>Service: ${service}</p>
-      <p>Date: ${date}</p>
-      <p>Time: ${time}</p>
-      <p>You will be assisted by ${randomEmployee} for your ${service}. We look forward to helping you to the best of our ability. See you the 😊!</p>
+      <p><strong>Client:</strong> ${fullName}</p>
+   
+            <p><strong>Service:</strong> ${service}</p>
+      <p><strong>Date:</strong> ${date}</p>
+      <p><strong>Time:</strong> ${time}</p>
+      <p><em>You will be assisted by <strong>${randomEmployee}</strong>  for your <strong>${service}</strong>. We look forward to helping you to the best of our ability. See you then</em> 😊!</p>
     `;
+
       document.getElementById("appointmentDetails").innerHTML = details;
-      alert("Appointment booked successfully!");
+
+      appointmentDetails.classList.add("left-align");
+      alert("Appointment booked successfully 😊!");
+      document.getElementById("appointmentForm").reset();
     } else {
       alert("Please fill out all fields.");
     }
